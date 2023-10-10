@@ -175,3 +175,71 @@
 
 
 
+
+
+//Ejercicios:
+// puedeVerPelicula(edad, tieneAutorizacion)
+// Crear una función puedeVerPelicula que tome como argumentos un número edad y un booleano tieneAutorizacion, y devuelva true si la persona está habilitada para ver la película o false si no. Sólo puede ver la película si: tiene 15 años o más, o tiene autorización de sus padres
+
+
+// function puedeVerPelicula(edad, tieneAutorizacion){
+//     if(edad >=15 || tieneAutorizacion === true){
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
+// puedeVerPelicula(12, false) // false
+// puedeVerPelicula(12, true)  // true
+// puedeVerPelicula(16, false) // true
+// puedeVerPelicula(18, true)  // true
+
+
+// estaEnRango(valor, minimo, maximo)
+// Crear una función estaEnRango que tome como argumentos tres números, un valor, un número minimo y un número maximo, y devuelva true si el valor se encuentra entre los números minimo y maximo o false si no (si el valor es igual a uno de los extremos se considera que está dentro del rango)
+
+// function estaEnRango(valor, minimo, maximo){
+//     if(valor >= minimo && valor <= maximo){
+//         console.log(true)
+//     }
+//     else if(valor < minimo){
+//         console.log("es false porque el valor es menor al minimo")
+//     } else {
+//         console.log("es false porque el valor es mayor al maximo")
+//     }
+// }
+
+
+
+
+// estaEnRango(3, 1, 10)   // true
+// estaEnRango(1, 1, 10)   // true
+// estaEnRango(10, 1, 10)  // true
+// estaEnRango(12, 1, 10)  // false
+// estaEnRango(-3, 1, 10)  // false
+
+
+
+
+// tienenMismaLongitud(a, b)
+
+// Crear una función tienenMismaLongitud que tome como argumentos dos strings a y b y devuelva true si tienen la misma longitud o false de lo contrario
+
+// function tienenMismaLongitud(a, b){
+//     if (a.length === b.length ){
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
+//Lo mismo pero con ternario
+
+function tienenMismaLongitud (a, b) {
+    a.length === b.length ? console.log(true) : console.log(false)
+}
+
+
+tienenMismaLongitud('javascript', 'java') // false
+tienenMismaLongitud('manzana', 'cerveza') // true
