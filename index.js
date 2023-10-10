@@ -236,10 +236,10 @@
 
 //Lo mismo pero con ternario
 
-function tienenMismaLongitud (a, b) {
-    a.length === b.length ? console.log(true) : console.log(false)
-}
+// function tienenMismaLongitud (a, b) {
+//     a.length === b.length ? console.log(true) : console.log(false)
+// }
 
 
-tienenMismaLongitud('javascript', 'java') // false
-tienenMismaLongitud('manzana', 'cerveza') // true
+// tienenMismaLongitud('javascript', 'java') // false
+// tienenMismaLongitud('manzana', 'cerveza') // true
